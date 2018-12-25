@@ -15,7 +15,7 @@ import java.sql.PreparedStatement;
  *
  * @author sercangl
  */
-public class CollectionApp {
+public class CollectionApp  {
     
     public static void connect() {
         Connection conn = null;
@@ -41,7 +41,7 @@ public class CollectionApp {
 }
    
     
-    public static void createNewDatabase(String fileName) {
+    public  void createNewDatabase(String fileName) {
  
         String url = "jdbc:sqlite:C:/sqlite/" + fileName;
  
@@ -58,7 +58,7 @@ public class CollectionApp {
     }
     
     
-    public static void createNewTable() {
+    public  void createNewTable() {
         // SQLite connection string
         String url = "jdbc:sqlite:C://sqlite/collection.db";
         
@@ -101,7 +101,7 @@ public class CollectionApp {
      
     // insert methdu çalışması için 2. connect methodu yarattım ismide connectt oldu.
     
-    private Connection connectt() {
+    public  Connection connectt() {
         // SQLite connection string
         String url = "jdbc:sqlite:C://sqlite/collection.db";
         Connection conn = null;
@@ -113,7 +113,7 @@ public class CollectionApp {
         return conn;
     }
     
-    public static void main(String[] args) {
+  /*  public static void main(String[] args) {
         // TODO code application logic here
        
         createNewDatabase("collection");
@@ -126,5 +126,6 @@ public class CollectionApp {
         
         
     }
+*/
     
 }
